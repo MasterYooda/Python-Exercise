@@ -21,16 +21,16 @@ They must reach bottom-left and bottom-right corner respectively.
 The following is an example of a valid path:
 
 2 4 5
-|   |
+ \  |
 3 1 2
-|  /
+ / /
 5 2 5
 |  \
 2 3 6
 
 Robots must travel to the next row, but can choose to move to adjacent columns or stay in the same column.
 They collect all coins on the block they travel on.
-In the path above, the total number of coins collected is 2+3+5+2+5+2+2+6 = 27.
+In the path above, the total number of coins collected is 2+1+5+2+5+2+2+6 = 25.
 
 
 If both robots travel to the same block, they can only get the coin in the block once (One robot will get nothing!)
