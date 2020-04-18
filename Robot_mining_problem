@@ -1,0 +1,49 @@
+This exercise aims to find the maximum number of coins that two robots can gain
+when traversing through a matrix.
+
+An example input is:
+
+3 4
+2 4 5 3 1 2 5 2 5 2 3 6
+
+The input corresponds to a 3 by 4 matrix as follows:
+
+2 4 5
+3 1 2
+5 2 5
+2 3 6
+
+Each number represents the number of coins stored in each block.
+
+Robots start from the top-left and top-right corner respectively.
+They must reach bottom-left and bottom-right corner respectively.
+
+The following is an example of a valid path:
+
+2 4 5
+|   |
+3 1 2
+|  /
+5 2 5
+|  \
+2 3 6
+
+Robots must travel to the next row, but can choose to move to adjacent columns or stay in the same column.
+They collect all coins on the block they travel on.
+In the path above, the total number of coins collected is 2+3+5+2+5+2+2+6 = 27.
+
+
+If both robots travel to the same block, they can only get the coin in the block once (One robot will get nothing!)
+
+2 4 5
+|   |
+3 1 2
+ \ /
+5 2 5
+ / \
+2 3 6
+
+For this path, both robot travels on the middle block in the 3rd row therefore
+the total number of coins is 2+3+2+2+ 5+2+0+6 = 22
+
+The aim is to find the maximum number of total coins that robots can collect, if they travel according to the rule above.
