@@ -36,3 +36,4 @@ for i in range(m-1):
                             results[i+1, (a-1+k)*n + b-1+l] = max(results[i+1, (a-1+k)*n + b-1+l], results[i, j] + nums[i+1, a-1+k])    
 
 print(results)
+print("The desired maximum is: "+ str(results[m-1, n-1]))
